@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="icon" href="data:;base64,=">
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <title>Tourisme à Rennes 2020 : Visiter Rennes</title>
+</head>
+
+<body>
+    <!--Header Section-->
+    <div class = "container">
+        <header>
+            <div class = "logo"><img src="./assets/img/Tripadvisor_logo.svg"    alt="logo"></div>
+            <nav>
+                <button class = "white"><i class="fas fa-plus-circle"></i>  &nbspPublier</button>
+                <button class = "white"><i class="far fa-bell"></i>&nbspAlertes</button>
+                <button class = "white"><i class="far fa-heart"></i>&nbspVoyages</button>
+                <button class = "black" id = "loginForm">Contactez-nous</button>
+            </nav>
+        </header>
+    </div>
+
+        <!--Main section-->
+    <main>
+            <div class = "container">
+                <h1><span class = "title-red">Explorez</span>&nbspRennes</h1>
+                
+                <!-- White buttons menu -->
+                <nav>
+                    <button class = "white">
+                        <div>Hôtels</div>
+                        <div><i class="fas fa-bed"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Locations de vacances</div>
+                        <div><i class="fas fa-door-closed"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Activités</div>
+                        <div><i class="fas fa-hiking"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Restaurants</div>
+                        <div><i class="fas fa-utensils"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Forums de voyage</div>
+                        <div><i class="far fa-comments"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Vols</div>
+                        <div><i class="fas fa-plane-departure"></i></div>
+                    </button>
+                    <button class="white">
+                        <div>Voitures de location</div>
+                        <div><i class="fas fa-car-alt"></i></div>
+                    </button>
+                    <button class = "white"> 
+                        <div>Plus</div>
+                        <div><i class="fas fa-ellipsis-h"></i></i></div>
+                    </button>
+                </nav>
+                
+                
+                <!-- Images mosaic -->
+                <div id = "images-mosaic">
+                    <div id = "left-column"><img src="./assets/img/photo_presentation1_bigger.jpg" alt="photo">
+                        <button class = "small-button">
+                            <div><i class="far fa-images"></i></div>
+                            <div>Toutes les photos</div></button>
+                        </div>
+                        <div id = "right-column">
+                            <img src="./assets/img/photo_presentation2.jpg" alt="photo"> 
+                            <img src="./assets/img/photo_presentation3.jpg" alt="photo">
+                        </div>
+                    </div>
+                    
+                    <div class = "notes-and-link">
+                        <div><a href="">Europe</a>&nbsp>&nbsp<a href="">France</a>&nbsp>&nbsp <a href="">Bretagne</a> &nbsp>&nbsp <a href=""> Ille-et-Vilaine</a> &nbsp>&nbsp <a href=""> Rennes</a></div>
+                        <div>Visiter : Rennes</div>
+                    </div>
+                    
+                    <section class =  "informations-Rennes">
+                        <div>
+                            <h2>Informations sur Rennes</h2>
+                            <p>Charmante capitale de la Bretagne, Rennes abrite de jolies maisons à colombages et des rues pavées qui vous transportent dans la France médiévale. Loin d'être figée dans le temps, cette ville universitaire possède des musées d'art, des cafés-terrasses et le parc du Thabor.</p>
+                        </div>
+                        <div class = "red-div">
+                            <div>
+                                <h3> Commencez à organiser Rennes</h3>
+                                <p>Créez un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une carte.</p>
+                                <button>Créez un voyage</button>
+                            </div>
+                            <div>
+                                <img src="./assets/img/capture_maps.png" alt="photo">
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Section Immanquables à Rennes -->
+                    <section>
+                        <div class="section-title">
+                            <div class = "simple-line"></div>
+                            <div><h2>Immanquable à Rennes</h2></div>
+                            <div class = "simple-line"></div>
+                        </div>
+                        
+                        <div class = "section-content">
+                            <div>
+                                <h2>Se divertir</h2>
+                                <p>Des lieux à voir, des rues à explorer et des expériences emblématiques.</p>
+                            </div>
+                            <div class="carrousel" id="entertainments-photos">
+                                <div>
+                                    <img src="./assets/img/immanquable1.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Pralibel</h3>
+                                    <p>Boutiques de souvenirs & Magasins spécialisés</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/immanquable2.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Ma Fromagerie Fine Gylaine et Sebastien Balé</h3>
+                                    <p>Boutiques de souvenirs & Magasins spécialisés</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/immanquable3.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Halles Centrales</h3>
+                                    <p>Marchés aux puces & Marchés de rue</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/immanquable4.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>La criée Centre d'art Contemporain</h3>
+                                    <p>Galeries d'art, Musées d'art</p>
+                                </div>
+                                <div class = "arrow-left" id="arrow-left-entertainment">
+                                    <i class="fas fa-arrow-left"></i>
+                                </div>
+                                <div class="arrow-right" id="arrow-right-entertainment">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-content">
+                            <div>
+                                <h2>Se reposer</h2>
+                                <p>Un mélange de charme, de modernité et de valeurs sûres</p>
+                            </div>
+                            <div class="carrousel" id="hotels-photos">
+                                <div>
+                                    <img src="./assets/img/repos-1.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Balthazzar Hôtel & Spa</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-2.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Le Magic Hall</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-3.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Le Saint-Antoine Hotel & Spa, BW Premier Collection</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-4.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Hôtel l'Ortega Rennes Aéroport</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-5.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Best Western Plus Hôtel Isidore</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-6.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Kyriad Rennes Centre</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-7.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Hôtel Anne de Bretagne</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-8.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Ibis Budget Rennes Route de Lorient</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-9.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Hotel Escale Oceania Rennes Cap Malo</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/repos-10.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Hotel The Originals Rennes Sud La Chaussairie</h3>
+                                </div>
+                                <div class = "arrow-left" id="arrow-left-hotels">
+                                    <i class="fas fa-arrow-left"></i>
+                                </div>
+                                <div class="arrow-right" id="arrow-right-hotels">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-content">
+                            <div>
+                                <h2>Se restaurer</h2>
+                                <p>Lieux incontournables où manger, boire et faire la fête.</p>
+                            </div>
+                            <div class="carrousel" id="restaurants-photos">
+                                <div>
+                                    <img src="./assets/img/manger-1.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Le Falafel</h3>
+                                    <p>€€-€€€ Libanaise, Saine, Moyen-Orient</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-2.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Kôlochô</h3>
+                                    <p>€€-€€€ Européenne, Hongroise, Slovène</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-3.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Creperie Ouzh-Taol</h3>
+                                    <p>€€-€€€ Française, Européenne, Végérariens bienvenus</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-4.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Le 2 rue des Dames</h3>
+                                    <p>€€-€€€ Française, Européenne, Saine</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-5.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>IMA</h3>
+                                    <p> Française, Végétariens bienvenus, Choix végétaliens</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-6.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Colibri Crêperie</h3>
+                                    <p>€ Française, Européenne, Végétariens bienvenus</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-7.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Les P'tits Potes</h3>
+                                    €€-€€€ Française, Européenne, Végétariens bienvenus
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-8.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Le Petit Hanoi</h3>
+                                    <p>€€-€€€ Asiatique, Vietnamienne</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-9.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>L'AOC</h3>
+                                    <p>€€-€€€ Française, Brasserie gastronomique, Végétariens bienvenus</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/manger-10.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Paris New York</h3>
+                                    <p>€€-€€€ Française, Européenne, Végérariens bienvenus</p>
+                                </div>
+                                <div class = "arrow-left" id="arrow-left-restaurants">
+                                    <i class="fas fa-arrow-left"></i>
+                                </div>
+                                <div class="arrow-right" id="arrow-right-restaurants">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+            <!-- Section location de logement -->
+                    <section id="location">
+                        <div class="section-title">
+                            <div class = "simple-line"></div>
+                            <div><h2>Louez un logement pour votre prochaine escapade</h2></div>
+                            <div class = "simple-line"></div>
+                        </div>
+
+                        <h2>Locations populaires à Rennes</h2>
+                        <div class="section-content">
+                            <div class="carrousel" id="locations-photos">
+                                <div>
+                                    <img src="./assets/img/location-1.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>STUDIO MEUBLE</h3>
+                                    <p>2 couchages - 1 chambre - 1 salle de bain</p>
+                                    <p>à partir de 65€/nuit</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-2.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>55 M2 HYPERCENTRE PARLEMENT 2 CHBRES</h3>
+                                    <p>6 couchages - 2 chambres - 2 salles de bain</p>
+                                    <p>à partir de 85€/nuit</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-3.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>L'HORIZON - Appartement grand confort et vue sublime + parking</h3>
+                                    <p>2 couchages - 1 chambre - 1 salle de bain</p>
+                                    <p>à partir 56€/nuit</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-4.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Léquinais Familial - Tarifs dégressifs - Doomaine des Hayes</h3>
+                                    <p>10 couchages - 5 chambres - 4 salles de bain</p>
+                                    <p>à partir de 590€/nuit</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-5.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>COCON URBAIN Centre Historique</h3>
+                                    <p>4 couchages - 1 chambre - 1 salle de bain</p>
+                                    <p>à partir de 59€/nuit</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-6.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>Appartement de caractère centre ville proche gare</h3>
+                                    <p>4 couchages - 1 nuit - 1 salle de bain</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/location-7.jpg" alt="photo">
+                                    <div class="heartbox"><i class="far fa-heart"></i></div>
+                                    <h3>ANGELE - 100m2, 3 Chambres avec parking</h3>
+                                    <p>6 couchages - 4 chambres - 1 salle de bain</p>
+                                </div>
+                                <div class = "arrow-left" id="arrow-left-locations">
+                                    <i class="fas fa-arrow-left"></i>
+                                </div>
+                                <div class="arrow-right" id="arrow-right-locations">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                    </div>
+
+                        <!-- Footer -->
+                    <footer>
+                        <div>
+                            <img src="./assets/img/Tripadvisor_small_logo.svg" alt="img">
+                            <div>
+                               <p id="copyright">© 2020 TripAdvisor LLC Tous droits réservés.</p> 
+                            </div>
+                         </div>
+                         <p>Cette version de notre site internet s'adresse aux membres du Réacteur, étudiants et enseignants. Si jamais tu lis ceci, je te propose de poster ton plat favoris sur le canal de la promo, en ce qui me concerne, ce sont les hamburger.</p>
+                    </footer>
+
+
+
+
+                <!--================= Contact form =====================-->
+            <div class="modal hidden">
+                <div class="container">
+                    <form id="contactForm">
+                        <button id="cancelLogin"><i class="far fa-times-circle"></i></button>
+                        <h1>Formulaire de contact</h1>
+                        <input type="text" 
+                        name="firstname" 
+                        id="firstname" 
+                        value="" 
+                        placeholder="Prénom">
+                        <input type="text"
+                        name="lastname"
+                        id="lastname"
+                        value=""
+                        placeholder="Nom">
+                        <input type="email"
+                        name="email"
+                        id="email"
+                        value=""
+                        placeholder="Email">
+                        <input type="text"
+                        name="subject"
+                        id="subject"
+                        value=""
+                        placeholder="Sujet">
+                        <textarea type="text"
+                        name="description"
+                        id="description"
+                        rows="6"
+                        placeholder="Votre message ici..."></textarea>
+                        <button id="submitLoginForm" type="submit">Envoyez le message</button>
+                    </form>
+                </div>
+            </div>
+                
+        
+<!--================= End of contact form =====================-->
+    </main>
+</body>
+</html>
